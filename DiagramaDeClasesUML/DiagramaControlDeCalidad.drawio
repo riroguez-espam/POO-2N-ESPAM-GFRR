@@ -1,0 +1,295 @@
+<mxfile host="65bd71144e">
+    <diagram id="diag_uml_clases" name="1. Diagrama de Clases UML">
+        <mxGraphModel dx="1358" dy="782" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" background="#F8FAFC" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title1" value="&lt;h1 style=&quot;margin:0;color:#0F172A;font-family:Helvetica;&quot;&gt;SISTEMA DE CONTROL DE CALIDAD - GRUPO 1&lt;/h1&gt;&lt;p style=&quot;margin:0;color:#059669;font-weight:bold;font-size:14px;&quot;&gt;DIAGRAMA DE CLASES UML • ARQUITECTURA POO Y REGLAS DE NEGOCIO&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="30" width="800" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_analista" value="&lt;p style=&quot;margin:0;text-align:center;&quot;&gt;&lt;b&gt;Analista&lt;/b&gt;&lt;/p&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#0284C7;fontColor=#FFFFFF;strokeColor=#0369A1;strokeWidth=2;rounded=1;arcSize=4;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="100" width="360" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_analista_attrs" value="&lt;div style=&quot;padding:1px 0;&quot;&gt;- codigoEmpleado : String&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;- nombre : String&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;- fechaInicioMuestra : String&lt;/div&gt;" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=8;spacingRight=6;spacingTop=6;spacingBottom=6;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontColor=#1E293B;fontSize=11;fontFamily=Menlo,Consolas,monospace;" parent="cls_analista" vertex="1">
+                    <mxGeometry y="32" width="360" height="69" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_analista_div" value="" style="line;strokeWidth=1.5;fillColor=none;align=left;verticalAlign=middle;rotatable=0;strokeColor=#0369A1;" parent="cls_analista" vertex="1">
+                    <mxGeometry y="101" width="360" height="4" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_analista_meths" value="&lt;div style=&quot;padding:1px 0;&quot;&gt;+ Analista(codigo: String, nombre: String, fecha: String)&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ Analista(codigo: String, nombre: String)&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ getCodigoEmpleado() : String&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ setCodigoEmpleado(codigo: String) : void&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ getNombre() : String&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ setNombre(nombre: String) : void&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ getFechaInicioMuestra() : String&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ setFechaInicioMuestra(fecha: String) : void&lt;/div&gt;" style="text;strokeColor=none;fillColor=#F8FAFC;align=left;verticalAlign=top;spacingLeft=8;spacingRight=6;spacingTop=6;spacingBottom=6;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontColor=#0F172A;fontSize=11;fontFamily=Menlo,Consolas,monospace;" parent="cls_analista" vertex="1">
+                    <mxGeometry y="105" width="360" height="164" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_formulario" value="&lt;p style=&quot;margin:0;text-align:center;&quot;&gt;&lt;b&gt;FormularioControlCalidad&lt;/b&gt;&lt;/p&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#047857;fontColor=#FFFFFF;strokeColor=#065F46;strokeWidth=2;rounded=1;arcSize=4;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="100" width="440" height="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_formulario_attrs" value="&lt;div style=&quot;padding:1px 0;&quot;&gt;- fechaProduccion : String&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;- lote : String&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;- analista : Analista&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;- muestras : List&amp;lt;Muestra&amp;gt;&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;- cerrado : boolean&lt;/div&gt;" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=8;spacingRight=6;spacingTop=6;spacingBottom=6;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontColor=#1E293B;fontSize=11;fontFamily=Menlo,Consolas,monospace;" parent="cls_formulario" vertex="1">
+                    <mxGeometry y="32" width="440" height="107" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_formulario_div" value="" style="line;strokeWidth=1.5;fillColor=none;align=left;verticalAlign=middle;rotatable=0;strokeColor=#065F46;" parent="cls_formulario" vertex="1">
+                    <mxGeometry y="139" width="440" height="4" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_formulario_meths" value="&lt;div style=&quot;padding:1px 0;&quot;&gt;+ FormularioControlCalidad()&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ FormularioControlCalidad(fecha: String, lote: String, a: Analista)&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ getFechaProduccion() : String&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ setFechaProduccion(fecha: String) : void&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ getLote() : String&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ setLote(lote: String) : void&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ getAnalista() : Analista&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ setAnalista(analista: Analista) : void&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ isCerrado() : boolean&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ agregarMuestra(muestra: Muestra) : void&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ getMuestras() : List&amp;lt;Muestra&amp;gt;&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ contarAptos() : int&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ contarNoAptos() : int&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ cerrarAnalisis() : void&lt;/div&gt;" style="text;strokeColor=none;fillColor=#F8FAFC;align=left;verticalAlign=top;spacingLeft=8;spacingRight=6;spacingTop=6;spacingBottom=6;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontColor=#0F172A;fontSize=11;fontFamily=Menlo,Consolas,monospace;" parent="cls_formulario" vertex="1">
+                    <mxGeometry y="143" width="440" height="278" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_muestra" value="&lt;p style=&quot;margin:0;text-align:center;&quot;&gt;&lt;b&gt;Muestra&lt;/b&gt;&lt;/p&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#B45309;fontColor=#FFFFFF;strokeColor=#92400E;strokeWidth=2;rounded=1;arcSize=4;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="1000" y="100" width="390" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_muestra_attrs" value="&lt;div style=&quot;padding:1px 0;&quot;&gt;+ TEMPERATURA_MAXIMA : double = 4.0 {static, final}&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;- producto : Producto&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;- temperatura : Double&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;- apto : Boolean&lt;/div&gt;" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=8;spacingRight=6;spacingTop=6;spacingBottom=6;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontColor=#1E293B;fontSize=11;fontFamily=Menlo,Consolas,monospace;" parent="cls_muestra" vertex="1">
+                    <mxGeometry y="32" width="390" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_muestra_div" value="" style="line;strokeWidth=1.5;fillColor=none;align=left;verticalAlign=middle;rotatable=0;strokeColor=#92400E;" parent="cls_muestra" vertex="1">
+                    <mxGeometry y="120" width="390" height="4" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_muestra_meths" value="&lt;div style=&quot;padding:1px 0;&quot;&gt;+ Muestra(producto: Producto, temp: Double)&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ getProducto() : Producto&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ setProducto(producto: Producto) : void&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ getTemperatura() : Double&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ setTemperatura(temp: Double) : void&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ isApto() : boolean&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ isValidada() : boolean&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ validarCondicion() : boolean&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ getResultado() : String&lt;/div&gt;" style="text;strokeColor=none;fillColor=#F8FAFC;align=left;verticalAlign=top;spacingLeft=8;spacingRight=6;spacingTop=6;spacingBottom=6;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontColor=#0F172A;fontSize=11;fontFamily=Menlo,Consolas,monospace;" parent="cls_muestra" vertex="1">
+                    <mxGeometry y="124" width="390" height="183" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_producto" value="&lt;p style=&quot;margin:0;text-align:center;&quot;&gt;&lt;b&gt;Producto&lt;/b&gt;&lt;/p&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#7C3AED;fontColor=#FFFFFF;strokeColor=#6D28D9;strokeWidth=2;rounded=1;arcSize=4;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="1060" y="450" width="330" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_producto_attrs" value="&lt;div style=&quot;padding:1px 0;&quot;&gt;- especie : String&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;- nombre : String&lt;/div&gt;" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=8;spacingRight=6;spacingTop=6;spacingBottom=6;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontColor=#1E293B;fontSize=11;fontFamily=Menlo,Consolas,monospace;" parent="cls_producto" vertex="1">
+                    <mxGeometry y="32" width="330" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_producto_div" value="" style="line;strokeWidth=1.5;fillColor=none;align=left;verticalAlign=middle;rotatable=0;strokeColor=#6D28D9;" parent="cls_producto" vertex="1">
+                    <mxGeometry y="82" width="330" height="4" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_producto_meths" value="&lt;div style=&quot;padding:1px 0;&quot;&gt;+ Producto(especie: String, nombre: String)&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ getEspecie() : String&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ setEspecie(especie: String) : void&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ getNombre() : String&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ setNombre(nombre: String) : void&lt;/div&gt;" style="text;strokeColor=none;fillColor=#F8FAFC;align=left;verticalAlign=top;spacingLeft=8;spacingRight=6;spacingTop=6;spacingBottom=6;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontColor=#0F172A;fontSize=11;fontFamily=Menlo,Consolas,monospace;" parent="cls_producto" vertex="1">
+                    <mxGeometry y="86" width="330" height="107" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_sonda" value="&lt;p style=&quot;margin:0;text-align:center;&quot;&gt;&lt;b&gt;SondaTemperatura&lt;/b&gt;&lt;/p&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#475569;fontColor=#FFFFFF;strokeColor=#334155;strokeWidth=2;rounded=1;arcSize=4;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="419.5" width="360" height="231" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_sonda_attrs" value="&lt;div style=&quot;padding:1px 0;&quot;&gt;- codigo : String&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;- calibrada : boolean&lt;/div&gt;" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=8;spacingRight=6;spacingTop=6;spacingBottom=6;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontColor=#1E293B;fontSize=11;fontFamily=Menlo,Consolas,monospace;" parent="cls_sonda" vertex="1">
+                    <mxGeometry y="32" width="360" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_sonda_div" value="" style="line;strokeWidth=1.5;fillColor=none;align=left;verticalAlign=middle;rotatable=0;strokeColor=#334155;" parent="cls_sonda" vertex="1">
+                    <mxGeometry y="82" width="360" height="4" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_sonda_meths" value="&lt;div style=&quot;padding:1px 0;&quot;&gt;+ SondaTemperatura(codigo: String, calibrada: boolean)&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ SondaTemperatura(codigo: String)&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ getCodigo() : String&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ setCodigo(codigo: String) : void&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ isCalibrada() : boolean&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ setCalibrada(calibrada: boolean) : void&lt;/div&gt;&lt;div style=&quot;padding:1px 0;&quot;&gt;+ leerTemperatura() : Double&lt;/div&gt;" style="text;strokeColor=none;fillColor=#F8FAFC;align=left;verticalAlign=top;spacingLeft=8;spacingRight=6;spacingTop=6;spacingBottom=6;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontColor=#0F172A;fontSize=11;fontFamily=Menlo,Consolas,monospace;" parent="cls_sonda" vertex="1">
+                    <mxGeometry y="86" width="360" height="145" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_main" value="&lt;p style=&quot;margin:0;text-align:center;&quot;&gt;&lt;b&gt;Main&lt;/b&gt;&lt;/p&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#0F172A;fontColor=#FFFFFF;strokeColor=#020617;strokeWidth=2;rounded=1;arcSize=4;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="560" width="340" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_main_attrs" value="" style="text;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=8;spacingRight=6;spacingTop=6;spacingBottom=6;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontColor=#1E293B;fontSize=11;fontFamily=Menlo,Consolas,monospace;" parent="cls_main" vertex="1">
+                    <mxGeometry y="32" width="340" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_main_div" value="" style="line;strokeWidth=1.5;fillColor=none;align=left;verticalAlign=middle;rotatable=0;strokeColor=#020617;" parent="cls_main" vertex="1">
+                    <mxGeometry y="62" width="340" height="4" as="geometry"/>
+                </mxCell>
+                <mxCell id="cls_main_meths" value="&lt;div style=&quot;padding:1px 0;&quot;&gt;+ main(args: String[]) : void&lt;/div&gt;" style="text;strokeColor=none;fillColor=#F8FAFC;align=left;verticalAlign=top;spacingLeft=8;spacingRight=6;spacingTop=6;spacingBottom=6;overflow=hidden;rotatable=0;whiteSpace=wrap;html=1;fontColor=#0F172A;fontSize=11;fontFamily=Menlo,Consolas,monospace;" parent="cls_main" vertex="1">
+                    <mxGeometry y="66" width="340" height="31" as="geometry"/>
+                </mxCell>
+                <mxCell id="note_invariants" value="&lt;b&gt;REGLAS DE NEGOCIO E INVARIANTES:&lt;/b&gt;&lt;br/&gt;• &lt;b&gt;Analista:&lt;/b&gt; Formato código &lt;code&gt;QA-\d{2}&lt;/code&gt; (ej: QA-02). Fecha válida.&lt;br/&gt;• &lt;b&gt;Lote:&lt;/b&gt; Formato &lt;code&gt;L-\d{4}-[A-Z]&lt;/code&gt; (ej: L-2026-A).&lt;br/&gt;• &lt;b&gt;Sonda:&lt;/b&gt; Solo mide si &lt;code&gt;isCalibrada() == true&lt;/code&gt;.&lt;br/&gt;• &lt;b&gt;Criterio Térmico:&lt;/b&gt; &lt;code&gt;temp &amp;lt;= 4.0 °C&lt;/code&gt; &amp;rarr; &lt;font color=&quot;#059669&quot;&gt;&lt;b&gt;APTO&lt;/b&gt;&lt;/font&gt;; &lt;code&gt;&amp;gt; 4.0 °C&lt;/code&gt; &amp;rarr; &lt;font color=&quot;#DC2626&quot;&gt;&lt;b&gt;NO APTO&lt;/b&gt;&lt;/font&gt;.&lt;br/&gt;• &lt;b&gt;Fail-Fast:&lt;/b&gt; Datos nulos/vacíos lanzan &lt;code&gt;IllegalArgumentException&lt;/code&gt;." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#FEF3C7;strokeColor=#D97706;fontColor=#78350F;fontSize=11;size=15;spacingTop=6;spacingLeft=8;align=left;verticalAlign=top;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="770" width="580" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="note_legend" value="&lt;b&gt;NOTACIÓN DE RELACIONES UML:&lt;/b&gt;&lt;br/&gt;• &lt;b&gt;Composición (◆):&lt;/b&gt; &lt;code&gt;FormularioControlCalidad&lt;/code&gt; contiene &lt;code&gt;Muestra&lt;/code&gt; [1 &amp;rarr; 0..*].&lt;br/&gt;• &lt;b&gt;Agregación (◇):&lt;/b&gt; &lt;code&gt;FormularioControlCalidad&lt;/code&gt; referencia &lt;code&gt;Analista&lt;/code&gt; [1 &amp;rarr; 1].&lt;br/&gt;• &lt;b&gt;Asociación simple (&amp;rarr;):&lt;/b&gt; &lt;code&gt;Muestra&lt;/code&gt; evalúa &lt;code&gt;Producto&lt;/code&gt; [* &amp;rarr; 1].&lt;br/&gt;• &lt;b&gt;Dependencia (- - &amp;gt;):&lt;/b&gt; &lt;code&gt;Main&lt;/code&gt; orquesta las instancias y mediciones." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#EFF6FF;strokeColor=#3B82F6;fontColor=#1E3A8A;fontSize=11;size=15;spacingTop=6;spacingLeft=8;align=left;verticalAlign=top;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="690" y="780" width="580" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel_form_analista" value="- analista&lt;br/&gt;1" style="endArrow=none;startArrow=diamond;startFill=0;endFill=0;strokeWidth=2;strokeColor=#0284C7;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.4;entryDx=0;entryDy=0;labelBackgroundColor=#F8FAFC;fontColor=#0369A1;fontSize=11;align=right;" parent="1" source="cls_formulario" target="cls_analista" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel_form_muestra" value="- muestras&lt;br/&gt;0..*" style="endArrow=none;startArrow=diamond;startFill=1;endFill=0;strokeWidth=2;strokeColor=#047857;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.35;entryDx=0;entryDy=0;labelBackgroundColor=#F8FAFC;fontColor=#065F46;fontSize=11;align=right;" parent="1" source="cls_formulario" target="cls_muestra" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel_muestra_producto" value="- producto&lt;br/&gt;1" style="endArrow=open;endFill=0;strokeWidth=2;strokeColor=#7C3AED;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=#F8FAFC;fontColor=#6D28D9;fontSize=11;align=left;" parent="1" source="cls_muestra" target="cls_producto" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="dep_main_formulario" value="«creates / executes»" style="endArrow=open;dashed=1;strokeWidth=1.5;strokeColor=#475569;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;labelBackgroundColor=#F8FAFC;fontColor=#334155;fontSize=10;" parent="1" source="cls_main" target="cls_formulario" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="dep_main_sonda" value="«calibrates &amp; reads»" style="endArrow=open;dashed=1;strokeWidth=1.5;strokeColor=#475569;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.8;entryDx=0;entryDy=0;labelBackgroundColor=#F8FAFC;fontColor=#334155;fontSize=10;" parent="1" source="cls_main" target="cls_sonda" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="dep_sonda_muestra" value="«temperatura (°C)»" style="endArrow=open;dashed=1;strokeWidth=1.5;strokeColor=#B45309;html=1;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;labelBackgroundColor=#F8FAFC;fontColor=#92400E;fontSize=10;edgeStyle=orthogonalEdgeStyle;" parent="1" source="cls_sonda" target="cls_muestra" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="diag_secuencia_flujo" name="2. Flujo de Proceso y Secuencia">
+        <mxGraphModel dx="1400" dy="950" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" background="#F8FAFC" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title2" value="&lt;h1 style=&quot;margin:0;color:#0F172A;font-family:Helvetica;&quot;&gt;FLUJO DINÁMICO DE CONTROL DE CALIDAD&lt;/h1&gt;&lt;p style=&quot;margin:0;color:#059669;font-weight:bold;font-size:14px;&quot;&gt;DIAGRAMA DE SECUENCIA • PASO A PASO DESDE EL INICIO DE TURNO HASTA EL CIERRE DEL LOTE&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="30" width="900" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="ll_main_box" value="&lt;b&gt;:Main (Ejecución)&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0F172A;fontColor=#FFFFFF;strokeColor=#0F172A;strokeWidth=2;shadow=1;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="25" y="100" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="ll_main_line" value="" style="endArrow=none;dashed=1;strokeWidth=1.5;strokeColor=#94A3B8;html=1;rounded=0;" edge="1" parent="1">
+                    <mxGeometry x="100" y="140" as="geometry">
+                        <mxPoint x="100" y="140" as="sourcePoint"/>
+                        <mxPoint x="100" y="980" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ll_analista_box" value="&lt;b&gt;analista: Analista&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0284C7;fontColor=#FFFFFF;strokeColor=#0284C7;strokeWidth=2;shadow=1;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="265" y="100" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="ll_analista_line" value="" style="endArrow=none;dashed=1;strokeWidth=1.5;strokeColor=#94A3B8;html=1;rounded=0;" edge="1" parent="1">
+                    <mxGeometry x="340" y="140" as="geometry">
+                        <mxPoint x="340" y="140" as="sourcePoint"/>
+                        <mxPoint x="340" y="980" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ll_form_box" value="&lt;b&gt;formulario: Formulario&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#047857;fontColor=#FFFFFF;strokeColor=#047857;strokeWidth=2;shadow=1;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="505" y="100" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="ll_form_line" value="" style="endArrow=none;dashed=1;strokeWidth=1.5;strokeColor=#94A3B8;html=1;rounded=0;" edge="1" parent="1">
+                    <mxGeometry x="580" y="140" as="geometry">
+                        <mxPoint x="580" y="140" as="sourcePoint"/>
+                        <mxPoint x="580" y="980" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ll_sonda_box" value="&lt;b&gt;sonda: SondaTemperatura&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#475569;fontColor=#FFFFFF;strokeColor=#475569;strokeWidth=2;shadow=1;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="745" y="100" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="ll_sonda_line" value="" style="endArrow=none;dashed=1;strokeWidth=1.5;strokeColor=#94A3B8;html=1;rounded=0;" edge="1" parent="1">
+                    <mxGeometry x="820" y="140" as="geometry">
+                        <mxPoint x="820" y="140" as="sourcePoint"/>
+                        <mxPoint x="820" y="980" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ll_muestra_box" value="&lt;b&gt;muestra: Muestra&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B45309;fontColor=#FFFFFF;strokeColor=#B45309;strokeWidth=2;shadow=1;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="985" y="100" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="ll_muestra_line" value="" style="endArrow=none;dashed=1;strokeWidth=1.5;strokeColor=#94A3B8;html=1;rounded=0;" edge="1" parent="1">
+                    <mxGeometry x="1060" y="140" as="geometry">
+                        <mxPoint x="1060" y="140" as="sourcePoint"/>
+                        <mxPoint x="1060" y="980" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="ll_reporte_box" value="&lt;b&gt;Consola / Reporte&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7C3AED;fontColor=#FFFFFF;strokeColor=#7C3AED;strokeWidth=2;shadow=1;fontSize=12;" vertex="1" parent="1">
+                    <mxGeometry x="1225" y="100" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="ll_reporte_line" value="" style="endArrow=none;dashed=1;strokeWidth=1.5;strokeColor=#94A3B8;html=1;rounded=0;" edge="1" parent="1">
+                    <mxGeometry x="1300" y="140" as="geometry">
+                        <mxPoint x="1300" y="140" as="sourcePoint"/>
+                        <mxPoint x="1300" y="980" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="s1" value="&lt;span style=&quot;font-size:11px;font-family:Helvetica;font-weight:bold;&quot;&gt;1. new Analista(&quot;QA-02&quot;, &quot;Maria Lopez&quot;)&lt;/span&gt;" style="endArrow=block;strokeWidth=1.5;strokeColor=#0284C7;html=1;fontColor=#0F172A;labelBackgroundColor=#F8FAFC;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100" y="170" as="sourcePoint"/>
+                        <mxPoint x="340" y="170" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="s1_ret" value="&lt;span style=&quot;font-size:11px;font-family:Helvetica;font-weight:normal;&quot;&gt;analista validado (QA-02)&lt;/span&gt;" style="endArrow=open;dashed=1;strokeWidth=1;strokeColor=#0284C7;html=1;fontColor=#64748B;labelBackgroundColor=#F8FAFC;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="340" y="200" as="sourcePoint"/>
+                        <mxPoint x="100" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="s2" value="&lt;span style=&quot;font-size:11px;font-family:Helvetica;font-weight:bold;&quot;&gt;2. new FormularioControlCalidad(&quot;2026-10-14&quot;, &quot;L-2026-A&quot;, analista)&lt;/span&gt;" style="endArrow=block;strokeWidth=1.5;strokeColor=#047857;html=1;fontColor=#0F172A;labelBackgroundColor=#F8FAFC;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100" y="230" as="sourcePoint"/>
+                        <mxPoint x="580" y="230" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="s2_ret" value="&lt;span style=&quot;font-size:11px;font-family:Helvetica;font-weight:normal;&quot;&gt;formulario abierto (cerrado = false)&lt;/span&gt;" style="endArrow=open;dashed=1;strokeWidth=1;strokeColor=#047857;html=1;fontColor=#64748B;labelBackgroundColor=#F8FAFC;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="580" y="260" as="sourcePoint"/>
+                        <mxPoint x="100" y="260" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="s3" value="&lt;span style=&quot;font-size:11px;font-family:Helvetica;font-weight:bold;&quot;&gt;3. new SondaTemperatura(&quot;SONDA-01&quot;)&lt;/span&gt;" style="endArrow=block;strokeWidth=1.5;strokeColor=#475569;html=1;fontColor=#0F172A;labelBackgroundColor=#F8FAFC;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100" y="290" as="sourcePoint"/>
+                        <mxPoint x="820" y="290" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="s4" value="&lt;span style=&quot;font-size:11px;font-family:Helvetica;font-weight:bold;&quot;&gt;4. setCalibrada(true)&lt;/span&gt;" style="endArrow=block;strokeWidth=1.5;strokeColor=#475569;html=1;fontColor=#0F172A;labelBackgroundColor=#F8FAFC;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100" y="330" as="sourcePoint"/>
+                        <mxPoint x="820" y="330" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="loop_box" value="&lt;b&gt;LOOP: 15 iteraciones de muestreo físico&lt;/b&gt;&lt;br/&gt;&lt;span style=&quot;font-size:10px;color:#475569;&quot;&gt;Por cada pescado muestreado se mide con la sonda y se valida térmicamente&lt;/span&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;width=260;height=30;fillColor=#F0FDF4;strokeColor=#22C55E;strokeWidth=1.5;fontColor=#15803D;align=left;spacingLeft=8;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="370" width="1120" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="s5" value="&lt;span style=&quot;font-size:11px;font-family:Helvetica;font-weight:bold;&quot;&gt;5. leerTemperatura()&lt;/span&gt;" style="endArrow=block;strokeWidth=1.5;strokeColor=#475569;html=1;fontColor=#0F172A;labelBackgroundColor=#F8FAFC;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100" y="420" as="sourcePoint"/>
+                        <mxPoint x="820" y="420" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="s5_ret" value="&lt;span style=&quot;font-size:11px;font-family:Helvetica;font-weight:normal;&quot;&gt;temperatura interna: 3.2 °C (simulada)&lt;/span&gt;" style="endArrow=open;dashed=1;strokeWidth=1;strokeColor=#475569;html=1;fontColor=#64748B;labelBackgroundColor=#F8FAFC;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="820" y="450" as="sourcePoint"/>
+                        <mxPoint x="100" y="450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="s6" value="&lt;span style=&quot;font-size:11px;font-family:Helvetica;font-weight:bold;&quot;&gt;6. new Muestra(producto, temperatura)&lt;/span&gt;" style="endArrow=block;strokeWidth=1.5;strokeColor=#B45309;html=1;fontColor=#0F172A;labelBackgroundColor=#F8FAFC;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100" y="490" as="sourcePoint"/>
+                        <mxPoint x="1060" y="490" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="s7_self" value="7. validarCondicion(): (temp &lt;= 4.0 °C ? APTO : NO APTO)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#B45309;strokeWidth=1.5;fontColor=#92400E;fontSize=11;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1060" y="530" as="sourcePoint"/>
+                        <mxPoint x="1100" y="530" as="targetPoint"/>
+                        <mxPoint x="1100" y="555" as="targetPoint"/>
+                        <mxPoint x="1060" y="555" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="s6_ret" value="&lt;span style=&quot;font-size:11px;font-family:Helvetica;font-weight:normal;&quot;&gt;muestra validada: resultado = &quot;APTO&quot;&lt;/span&gt;" style="endArrow=open;dashed=1;strokeWidth=1;strokeColor=#B45309;html=1;fontColor=#64748B;labelBackgroundColor=#F8FAFC;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1060" y="570" as="sourcePoint"/>
+                        <mxPoint x="100" y="570" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="s8" value="&lt;span style=&quot;font-size:11px;font-family:Helvetica;font-weight:bold;&quot;&gt;8. agregarMuestra(muestra)&lt;/span&gt;" style="endArrow=block;strokeWidth=1.5;strokeColor=#047857;html=1;fontColor=#0F172A;labelBackgroundColor=#F8FAFC;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100" y="610" as="sourcePoint"/>
+                        <mxPoint x="580" y="610" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="s8_ack" value="&lt;span style=&quot;font-size:11px;font-family:Helvetica;font-weight:normal;&quot;&gt;muestra agregada a lista&lt;/span&gt;" style="endArrow=open;dashed=1;strokeWidth=1;strokeColor=#047857;html=1;fontColor=#64748B;labelBackgroundColor=#F8FAFC;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="580" y="640" as="sourcePoint"/>
+                        <mxPoint x="100" y="640" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="s9" value="&lt;span style=&quot;font-size:11px;font-family:Helvetica;font-weight:bold;&quot;&gt;9. cerrarAnalisis()&lt;/span&gt;" style="endArrow=block;strokeWidth=2;strokeColor=#047857;html=1;fontColor=#0F172A;labelBackgroundColor=#F8FAFC;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100" y="710" as="sourcePoint"/>
+                        <mxPoint x="580" y="710" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="s9_self1" value="contarAptos() y contarNoAptos()" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#047857;strokeWidth=1.5;fontColor=#065F46;fontSize=11;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="580" y="750" as="sourcePoint"/>
+                        <mxPoint x="620" y="750" as="targetPoint"/>
+                        <mxPoint x="620" y="775" as="targetPoint"/>
+                        <mxPoint x="580" y="775" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="s9_out" value="&lt;span style=&quot;font-size:11px;font-family:Helvetica;font-weight:bold;&quot;&gt;Consolidar lote &amp; imprimir BATCH SUMMARY&lt;/span&gt;" style="endArrow=block;strokeWidth=2;strokeColor=#7C3AED;html=1;fontColor=#0F172A;labelBackgroundColor=#F8FAFC;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="580" y="790" as="sourcePoint"/>
+                        <mxPoint x="1300" y="790" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="s9_ack" value="&lt;span style=&quot;font-size:11px;font-family:Helvetica;font-weight:normal;&quot;&gt;Lote L-2026-A cerrado con trazabilidad garantizada&lt;/span&gt;" style="endArrow=open;dashed=1;strokeWidth=1.5;strokeColor=#7C3AED;html=1;fontColor=#64748B;labelBackgroundColor=#F8FAFC;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1300" y="830" as="sourcePoint"/>
+                        <mxPoint x="100" y="830" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="s10" value="&lt;span style=&quot;font-size:11px;font-family:Helvetica;font-weight:bold;&quot;&gt;10. [Fail-Fast Test] new Formulario(fecha, &quot;LOTE-CORRUPTO&quot;, analista)&lt;/span&gt;" style="endArrow=block;strokeWidth=1.5;strokeColor=#DC2626;html=1;fontColor=#DC2626;labelBackgroundColor=#F8FAFC;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100" y="880" as="sourcePoint"/>
+                        <mxPoint x="580" y="880" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="s10_err" value="&lt;span style=&quot;font-size:11px;font-family:Helvetica;font-weight:normal;&quot;&gt;throws IllegalArgumentException(&quot;El lote debe tener el formato L-0000-A&quot;)&lt;/span&gt;" style="endArrow=open;dashed=1;strokeWidth=1.5;strokeColor=#DC2626;html=1;fontColor=#DC2626;labelBackgroundColor=#F8FAFC;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="580" y="920" as="sourcePoint"/>
+                        <mxPoint x="100" y="920" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

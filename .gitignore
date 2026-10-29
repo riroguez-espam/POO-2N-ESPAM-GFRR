@@ -1,0 +1,15 @@
+# Node / TypeScript
+node_modules/
+dist/
+npm-debug.log*
+
+# Java
+*.class
+bin/
+out/
+
+# IDEs / Sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
